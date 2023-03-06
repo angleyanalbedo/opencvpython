@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>688</width>
+    <height>579</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="img_src">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>210</y>
+      <width>256</width>
+      <height>256</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>您输入的图像会显示在这里</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_des">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>210</y>
+      <width>256</width>
+      <height>256</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>经过处理后的图像会显示在这里</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="path">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>441</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>当前路径：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="demo_button">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>20</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>采用示例</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>480</y>
+      <width>81</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>输入图像</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>480</y>
+      <width>81</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>输出图像</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>功能描述：</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="para1">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>70</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="para2">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>110</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="para3">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>150</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>120</y>
+      <width>51</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>参数2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>160</y>
+      <width>51</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>参数3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>80</y>
+      <width>51</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>参数1</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="description">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>70</y>
+      <width>441</width>
+      <height>111</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>688</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="open"/>
+    <addaction name="save"/>
+   </widget>
+   <widget class="QMenu" name="menu_begin">
+    <property name="title">
+     <string>开始</string>
+    </property>
+    <addaction name="grey"/>
+    <addaction name="resiz"/>
+   </widget>
+   <widget class="QMenu" name="menu_trans">
+    <property name="title">
+     <string>灰度变换</string>
+    </property>
+    <addaction name="thres"/>
+    <addaction name="nega"/>
+    <addaction name="logtrans"/>
+    <addaction name="gammatrans"/>
+    <addaction name="bitwise"/>
+   </widget>
+   <widget class="QMenu" name="menu_histogram">
+    <property name="title">
+     <string>直方图处理</string>
+    </property>
+    <addaction name="equal"/>
+   </widget>
+   <widget class="QMenu" name="menu_spatial">
+    <property name="title">
+     <string>空间滤波</string>
+    </property>
+    <addaction name="mean"/>
+    <addaction name="median"/>
+    <addaction name="gaussfilt"/>
+    <addaction name="bilateral"/>
+    <addaction name="sharpen"/>
+   </widget>
+   <widget class="QMenu" name="menu_freq">
+    <property name="title">
+     <string>频域滤波</string>
+    </property>
+    <addaction name="lowpass"/>
+    <addaction name="highpass"/>
+   </widget>
+   <widget class="QMenu" name="menu_noise">
+    <property name="title">
+     <string>噪声添加</string>
+    </property>
+    <addaction name="gaussnoi"/>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_begin"/>
+   <addaction name="menu_trans"/>
+   <addaction name="menu_histogram"/>
+   <addaction name="menu_spatial"/>
+   <addaction name="menu_freq"/>
+   <addaction name="menu_noise"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="open">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="save">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="grey">
+   <property name="text">
+    <string>灰度化</string>
+   </property>
+  </action>
+  <action name="resiz">
+   <property name="text">
+    <string>伸缩</string>
+   </property>
+  </action>
+  <action name="thres">
+   <property name="text">
+    <string>阈值化</string>
+   </property>
+  </action>
+  <action name="equal">
+   <property name="text">
+    <string>直方图均衡</string>
+   </property>
+  </action>
+  <action name="mean">
+   <property name="text">
+    <string>均值滤波</string>
+   </property>
+  </action>
+  <action name="lowpass">
+   <property name="text">
+    <string>低通滤波</string>
+   </property>
+  </action>
+  <action name="gaussnoi">
+   <property name="text">
+    <string>高斯噪声</string>
+   </property>
+  </action>
+  <action name="dilate">
+   <property name="text">
+    <string>膨胀</string>
+   </property>
+  </action>
+  <action name="nega">
+   <property name="text">
+    <string>图像反转</string>
+   </property>
+  </action>
+  <action name="logtrans">
+   <property name="text">
+    <string>对数变换</string>
+   </property>
+  </action>
+  <action name="gammatrans">
+   <property name="text">
+    <string>幂律变换</string>
+   </property>
+  </action>
+  <action name="bitwise">
+   <property name="text">
+    <string>位图切割</string>
+   </property>
+  </action>
+  <action name="median">
+   <property name="text">
+    <string>中值滤波</string>
+   </property>
+  </action>
+  <action name="gaussfilt">
+   <property name="text">
+    <string>高斯滤波</string>
+   </property>
+  </action>
+  <action name="bilateral">
+   <property name="text">
+    <string>双边滤波</string>
+   </property>
+  </action>
+  <action name="sharpen">
+   <property name="text">
+    <string>锐化滤波</string>
+   </property>
+  </action>
+  <action name="highpass">
+   <property name="text">
+    <string>高通滤波</string>
+   </property>
+  </action>
+  <action name="pappernoi">
+   <property name="text">
+    <string>椒盐噪声</string>
+   </property>
+  </action>
+  <action name="possionnoi">
+   <property name="text">
+    <string>泊松噪声</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
